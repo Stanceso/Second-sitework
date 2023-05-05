@@ -1,0 +1,704 @@
+@font-face {
+  font-family: "Muller";
+  src: local("Muller-Regular"),
+    url("../fonts/MullerRegular.woff2") format("woff2"),
+    url("../fonts/MullerRegular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Muller";
+  src: local("Muller-Light"), url("../fonts/MullerLight.woff2") format("woff2"),
+    url("../fonts/MullerLight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Muller";
+  src: local("Muller-Bold"), url("../fonts/MullerBold.woff2") format("woff2"),
+    url("../fonts/MullerBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Muller";
+  src: local("Muller-Medium"),
+    url("../fonts/MullerMedium.woff2") format("woff2"),
+    url("../fonts/MullerMedium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  min-width: 1200px;
+  font-family: "Muller", sans-serif;
+  font-weight: 400;
+  background: #e5e5e5;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.btn-reset {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+}
+
+.container {
+  width: 1170px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.section-title {
+  margin: 0;
+  padding-bottom: 20px;
+  padding-top: 30px;
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  color: #333333;
+  margin-top: 70px;
+  margin-bottom: 20px;
+}
+
+.section-descr {
+  margin: 0;
+  margin-bottom: 70px;
+}
+
+.section-offset {
+  padding-bottom: 20px;
+}
+
+.header {
+  padding: 30px 0px;
+  margin-bottom: 20px;
+}
+
+.header-btn {
+  min-width: 100px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.header-logo {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.header-list {
+  list-style: none;
+  padding-top: 11px;
+}
+
+.header-nav {
+  min-height: 70px;
+}
+
+.header-telephone {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 34px;
+  align-items: center;
+  color: #666666;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+  font-style: normal;
+  text-decoration: none;
+}
+
+.header-btn {
+  padding: 13px 20px;
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  border: 1px solid #cc9933;
+  border-radius: 10px;
+  color: #cc9933;
+  background-color: #ffffff;
+}
+.image-arrow {
+  padding-right: 8px;
+  padding-bottom: 2px;
+}
+
+.cabinet-link {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #cc9933;
+  text-decoration: none;
+}
+
+.header-button {
+  margin-top: 30px;
+  background: #ffffff;
+  border-radius: 15px;
+}
+
+.arrow {
+  vertical-align: middle;
+  padding-left: 4px;
+}
+
+.arrow-left {
+  margin: 0 auto;
+  vertical-align: middle;
+  padding-left: 3px;
+}
+.header-link {
+  font-size: 16px;
+  line-height: 16px;
+  color: #666666;
+  text-decoration: none;
+}
+
+.header-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.link-special-left {
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #f0bf5f;
+  position: absolute;
+  text-decoration: none;
+}
+
+.bnt-container {
+  margin: auto;
+  margin-right: 20px;
+}
+
+.special-section-title {
+  padding-bottom: 10px;
+  padding: 0;
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+  color: #ffffff;
+}
+
+.image-spec {
+  width: 573px;
+  height: 258px;
+  background: linear-gradient(
+    90deg,
+    rgba(48, 64, 89, 0.84) -2.9%,
+    rgba(53, 65, 83, 0) 65.7%
+  );
+  border-radius: 15px;
+}
+
+.cards-container {
+  display: flex;
+  width: 1170px;
+}
+
+.image-list-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: 40px;
+}
+
+.image-services {
+  background-image: url("/Image/image4.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top center;
+}
+.special__content {
+  min-height: 600px;
+  display: flex;
+  margin-bottom: 40px;
+}
+.special__block {
+  display: flex;
+  flex-direction: column;
+}
+
+.special__block:not(:last-child) {
+  margin-right: 30px;
+}
+
+.special__item_left_one {
+  background-image: url(/Image/image1.png);
+  background-size: cover;
+  width: 570px;
+  min-height: 250px;
+  border-radius: 15px;
+  flex: 1;
+  margin-bottom: 30px;
+  padding: 40px;
+}
+
+.special-title-big {
+  margin: 0;
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  color: #333333;
+  padding-left: 40px;
+  margin-bottom: 40px;
+}
+
+.special-price {
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: #ffffff;
+  opacity: 0.8;
+  margin-top: 0;
+}
+
+.special__item_left_two {
+  background-image: url(/Image/image2.png);
+  background-size: cover;
+  width: 570px;
+  min-height: 250px;
+  border-radius: 15px;
+  flex: 1;
+  margin-bottom: 30px;
+  padding: 40px;
+}
+
+.special__item {
+  background-image: url(/Image/image3.jpg);
+  background-size: cover;
+  width: 570px;
+  min-height: 540px;
+  flex: 1;
+  margin-bottom: 30px;
+  border-radius: 15px;
+  padding: 40px;
+}
+.item-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-radius: 15px;
+}
+
+.special-title {
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+  color: #ffffff;
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+.special-title-right {
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 60px;
+  color: #ffffff;
+  margin: inherit;
+}
+
+.link-special {
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #f0bf5f;
+  text-decoration: none;
+}
+
+.special-price-left {
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  color: #ffffff;
+  opacity: 0.8;
+  margin-top: initial;
+}
+
+.services-item {
+  width: 585px;
+  min-height: 165px;
+}
+
+.services-link {
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 200%;
+  color: #cc9933;
+  text-decoration: none;
+}
+
+.hero-descr {
+  margin: 0;
+  min-height: 100px;
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 200%;
+  color: #000000;
+  margin-bottom: 40px;
+}
+
+.title-services {
+  text-decoration: none;
+  margin: 0;
+}
+.service-image-1 {
+  background-image: url(/Image/image4.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top center;
+  border-radius: 15px 15px 0px 0px;
+}
+
+.service-image-2 {
+  background-image: url(/Image/image5.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top center;
+  border-radius: 15px 15px 0px 0px;
+}
+
+.service-image-3 {
+  background-image: url(/Image/image6.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top center;
+  border-radius: 15px 15px 0px 0px;
+}
+
+.service-image-4 {
+  background-image: url(/Image/image7.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top center;
+  border-radius: 15px 15px 0px 0px;
+}
+
+.text-div {
+  padding: 102px 126px 29px 45px;
+}
+
+.card-buttom {
+  background: #ffffff;
+  border-radius: 0px 0px 15px 15px;
+  min-height: 165px;
+  padding-left: 45px;
+  padding-top: 20px;
+}
+
+.service-article {
+  padding-bottom: 24px;
+}
+
+.services-item:nth-last-child(odd) {
+  padding-left: 24px;
+  margin: 0;
+}
+
+.service-paragraph {
+  margin: 0;
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 200%;
+  color: #000000;
+}
+
+.advantage-list {
+  width: 276px;
+  min-height: 276px;
+  background: #ffffff;
+  border-radius: 15px;
+  margin-bottom: 22px;
+}
+
+.advantage-paragraph {
+  margin: 0;
+  display: flex;
+  padding-top: 60px;
+  padding-left: 45px;
+  padding-right: 44px;
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 200%;
+  color: #000000;
+}
+
+.svg-1 {
+  background-image: url(/Image/svg1.svg);
+  background-repeat: no-repeat;
+  height: 64px;
+  position: relative;
+  top: 40px;
+  left: 45px;
+}
+
+.svg-2 {
+  background-image: url(/Image/svg2.svg);
+  background-repeat: no-repeat;
+  height: 64px;
+  position: relative;
+  top: 40px;
+  left: 45px;
+}
+.svg-3 {
+  background-image: url(/Image/svg3.svg);
+  background-repeat: no-repeat;
+  height: 64px;
+  position: relative;
+  top: 40px;
+  left: 45px;
+}
+.svg-4 {
+  background-image: url(/Image/svg4.svg);
+  background-repeat: no-repeat;
+  height: 64px;
+  position: relative;
+  top: 40px;
+  left: 45px;
+}
+.svg-5 {
+  background-image: url(/Image/svg5.svg);
+  background-repeat: no-repeat;
+  height: 64px;
+  position: relative;
+  top: 40px;
+  left: 45px;
+}
+.svg-6 {
+  background-image: url(/Image/svg6.svg);
+  background-repeat: no-repeat;
+  height: 64px;
+  position: relative;
+  top: 40px;
+  left: 45px;
+}
+.svg-7 {
+  background-image: url(/Image/svg7.svg);
+  background-repeat: no-repeat;
+  height: 64px;
+  position: relative;
+  top: 40px;
+  left: 45px;
+}
+.svg-8 {
+  background-image: url(/Image/svg8.svg);
+  background-repeat: no-repeat;
+  height: 64px;
+  position: relative;
+  top: 40px;
+  left: 45px;
+}
+.advantage-list-column {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.placement-card-list {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  min-height: 430px;
+}
+
+.numbers-btn {
+  width: 100px;
+  height: 42px;
+  border: 1px solid #cc9933;
+  border-radius: 10px;
+  color: #cc9933;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 13px 20px;
+  gap: 10px;
+}
+
+.placement-title {
+  margin: 0;
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.placement-in-country {
+  display: inline-block;
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #999999;
+  margin-bottom: 12px;
+}
+
+.image-placement {
+  width: 374px;
+  min-height: 217px;
+  border-radius: 15px 15px 0px 0px;
+}
+
+.cards {
+  min-height: 220px;
+  background: #ffffff;
+  border-radius: 15px 15px 15px 15px;
+  margin-top: -6px;
+  position: relative;
+}
+
+.placement-price {
+  width: 66px;
+  height: 20px;
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.placement-price-number {
+  width: 17px;
+  height: 16px;
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #999999;
+}
+
+.night-title {
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #000000;
+}
+.stars {
+  display: inline;
+  padding-left: 60px;
+}
+
+.cards-intro {
+  padding-left: 40px;
+}
+
+.placement-cards {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  min-height: 440px;
+  border-radius: 15px;
+  width: 374px;
+  margin-bottom: 30px;
+  background-image: url(/Image/17.jpg);
+}
+
+.last-image {
+  border-radius: 15px;
+  display: flex;
+}
+
+.last-title {
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  width: 374px;
+  border-radius: 15px;
+  line-height: 200%;
+  color: #ffffff;
+  text-decoration: none;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 27px;
+}
+
+.vector-white {
+  padding-bottom: 11px;
+  padding-left: 5px;
+}
+
+.placement {
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
